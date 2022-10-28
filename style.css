@@ -88,11 +88,11 @@ body {
 }
 
 #title-bar-width {
-  width: calc(170% + 2px); /* 2px added to allow for border on iframe */
+  width: calc(190% + 2px); /* 2px added to allow for border on iframe */
 }
 
 #content {
-  width: 170%;
+  width: 190%;
   height: 600px;
   border: 1px solid gray;
 }
