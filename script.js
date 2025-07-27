@@ -3,7 +3,6 @@ var square = document.getElementById("square");
 var exit = document.getElementById("exit");
 var titleBar = document.getElementById("title-bar");
 
-////////////////// Hover listeners //////////////////
 minimize.addEventListener('mouseover', function handleMouseOver() {
   minimize.style.backgroundColor = '#272727';
   minimize.style.cursor = 'context-menu';
@@ -43,8 +42,7 @@ titleBar.addEventListener('mouseout', function handleMouseOver() {
 });
 
 
-//////////////// Make window draggable start ////////////////
-// Make the DIV element draggable:
+
 var draggable = $('#window');
 var title = $('#title-bar');
 
@@ -64,11 +62,9 @@ title.on('mousedown', function(e){
 			dr.removeClass("drag");
 	});
 });
-//////////////// Make window draggable end ////////////////
 
 
-////////////////// Onclick listeners //////////////////
-// X button functionality
+
 $("#exit").click(function(){
     $("#window").css("display", "none");
   });
@@ -92,7 +88,6 @@ function enlarge(){
 }
 
 
-//// Pop-up appear on click with delay ////
 $("#clickme").click(function(){
     $("#window").fadeIn(300);
   });
